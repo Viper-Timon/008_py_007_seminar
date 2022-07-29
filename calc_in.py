@@ -4,23 +4,23 @@ def inlet():
     b2=0
 ### ввод a
     a = input('a = ')
+    flag=0
     for i in a:
-        flag=0
-        if a.isdigit()==False:
-            flag=1
+        if i.lower()=='j':
+            flag+=1
         
-    if flag==0:
+    if flag<1:
         a2=float(a)
     else:
         a2=complex(a)
 ### ввод b        
     b = input('b = ')
+    flag=0
     for i in b:
-        flag=0
-        if b.isdigit()==False:
-            flag=1
+        if i.lower()=='j':
+            flag+=1
         
-    if flag==0:
+    if flag<1:
         b2=float(b)
     else:
         b2=complex(b)
